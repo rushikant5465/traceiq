@@ -12,7 +12,7 @@ const Button = ({ children, className = "", ...props }) => (
 
 export default function App() {
   const [billing, setBilling] = useState("monthly");
-  const planAmount = billing === "monthly" ? "40.00" : "400.00";
+  const planAmount = billing === "monthly" ? "1.00" : "1.00";
   const planLabel = billing === "monthly" ? "Monthly Pro Plan" : "Yearly Pro Plan";
   const paypalClientId = import.meta.env.VITE_PAYPAL_CLIENT_ID ?? "";
 

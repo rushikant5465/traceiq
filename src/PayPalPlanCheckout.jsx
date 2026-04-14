@@ -46,7 +46,7 @@ export function PayPalPlanCheckout({ clientId, billing, planAmount, planLabel })
         <h3 className="text-lg mb-2">Pro Plan</h3>
 
         <p className="text-3xl font-bold mb-4">
-          {billing === "monthly" ? "$40/mo" : "$400/yr"}
+          {billing === "monthly" ? "$1/mo" : "$1/yr"}
         </p>
 
         <p className="text-gray-400 text-sm mb-6">
@@ -59,7 +59,7 @@ export function PayPalPlanCheckout({ clientId, billing, planAmount, planLabel })
         </p>
 
         <PayPalButtons
-        fundingSource="paypal"
+          fundingSource="paypal"
           style={{ layout: "vertical", color: "gold", shape: "rect", label: "paypal" }}
           forceReRender={[billing, planAmount, planLabel]}
           createOrder={createOrder}
