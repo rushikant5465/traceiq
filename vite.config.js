@@ -6,7 +6,7 @@ const payPalFriendlyHeaders = {
 }
 
 export default defineConfig({
-  base: "/", // ✅ ADD THIS LINE
+  base: "/traceiq/", // ✅ THIS IS THE FIX
   plugins: [react()],
   server: {
     headers: payPalFriendlyHeaders,
